@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thế giới di đông</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="images/anh3.jpg"
+        alt="thế giới di động "
+        width="100%"
+        height="auto"
+      />
+    </header>
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href=""><img src="images/anh4.jpg" alt="" width="100" /></a>
+          </li>
+          <li>
+            <a href="">Phú Yên</a>
+          </li>
+          <li><input type="text" placeholder="Bạn tìm gì ..." /></li>
+          <li><a href="#intron"></a><button>Giới Thiệu</button></li>
+          <li><a href="#products"></a><button>Sản Phẩm/Giá Tiền</button></li>
+          <li>
+            <a href=""><button>Tin Tức</button></a>
+          </li>
+          <li><a href="">24h Công Nghệ</a></li>
+          <li><a href="">Hỏi Đáp</a></li>
+          <li><a href="">Game App</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="menu-bar">
+      <div class="container">
+        <div class="menu-bar-container">
+          <ul>
+            <li>
+              <b>
+                <a href="#intron"><button>Giới Thiệu</button></a></b
+              >
+            </li>
+            <li>
+              <b
+                ><a href="#products"><button>Sản Phẩm Nổi Bật</button></a></b
+              >
+            </li>
+            <li>
+              <b
+                ><a href="#news"><button>Tin Tức</button></a></b
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section id="intro" class="section-flex">
+        <div class="intro-content">
+          <h2>Chào mừng đến với PhoneStore</h2>
+          <b>
+            <p>
+              Cửa hàng PhoneStore Hạo Dân kính chào quý kháng! Đảm Bảo, Uy Tín
+              ,Chất Lượng
+            </p>
+          </b>
+        </div>
+        <div class="intro-image">
+          <img src="images/anh5.jpg" alt="Phone Store Banner" width="50" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="products">
+        <h2 class="section-title"><button>Sản phẩm nổi bật</button></h2>
+        <div class="products-grid">
+          <article
+            class="product-card"
+            onclick="
+              showProductDetail(
+                name,
+                price,
+                desc,
+              )('iPhone 19 Pro Max', '88.000.000')
+            "
+          >
+            <img src="images/anh6.jpg" alt="iPhone 19 Pro Max" />
+            <h3>iPhone 19 Pro Max</h3>
+            <p class="price">88.000.000đ</p>
+          </article>
+
+          <article
+            class="product-card"
+            onclick="
+              showProductDetail(name, price, desc);
+              'Laptop Asus'('92.789.345đ');
+            "
+          >
+            <img src="images/anh8.jpg" alt="Laptop Asus" />
+            <h3>Laptop gaming asus rog strix</h3>
+            <p class="price">92.789.345đ</p>
+          </article>
+
+          <article
+            class="product-card"
+            onclick="
+              showProductDetail(name, price, desc)(
+                'ipad pro',
+                '66.000.000đ',
+                'iPad Pro features the M5 chip with Apple Intelligence, all-day battery life, 11-inch or 13-inch display, Wi-Fi 7, 5G, and Apple Pencil Pro support.',
+              )
+            "
+          >
+            <img src="images/anh9.ipg" alt="ipad pro" />
+            <h3>ipad pro</h3>
+            <p class="price">66.000.000đ</p>
+          </article>
+          <article
+            class="product-card"
+            onclick="
+              showProductDetail(name, price, desc)(
+                'Iphone 18 Pro ',
+                '36.234.445đ',
+                'Bút S-Pen quyền năng, Camera 200MP Zoom 100x,  AI.',
+              )
+            "
+          >
+            <img src="images/anh10.ipg" alt="Iphone 18 pro" />
+            <h3>Iphone 18 pro</h3>
+            <p class="price">36.234.445đ</p>
+          </article>
+        </div>
+
+        <div id="product-detail-modal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Tên sản phẩm</h3>
+            <p id="modal-price" class="price"></p>
+            <p id="modal-desc">Mô tả sản phẩm...</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="news">
+        <h2 class="section-title">Tin tức công nghệ</h2>
+        <div class="news-container">
+          <article class="news-item">
+            <h3>Bùng nổ xu hướng AI trên các dòng điện thoại 2026</h3>
+            <p>
+              Tại sự kiện WWDC 2026, Apple chính thức công bố iOS 27, macOS 27
+              và hệ sinh thái đi kèm, nâng cấp toàn diện Apple Intelligence, trợ
+              lý ảo Siri AI cùng các công cụ quản lý kỹ thuật số mạnh mẽ dành
+              cho phụ huynh...
+            </p>
+          </article>
+          <article class="news-item">
+            <p>
+              Thời lượng pin cải thiện đáng kể nhờ các con chip tiến trình mới
+              tối ưu năng lượng...
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p><b>Thông tin liên hệ:</b> <b>Cửa hàng PhoneStore Hạo Dân</b></p>
+      <a href="mailto:danghaodan.py@gmail.com">Gmail </a>
+      <br />
+      <a href="tel:0328875988">Hotline Phone Hạo Dân : 0328875899</a>
+    </footer>
+
+    <script src="js/java.js"></script>
+  </body>
+</html>
