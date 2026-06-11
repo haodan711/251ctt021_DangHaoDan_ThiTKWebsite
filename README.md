@@ -1,2 +1,2 @@
 # 251ctt021_DangHaoDan_ThiTKWebsitefile:
-///D:/thietkewed/251ctt021_dan25/index.html
+https://haodan711.github.io/251ctt021_DangHaoDan_ThiTKWebsite/
